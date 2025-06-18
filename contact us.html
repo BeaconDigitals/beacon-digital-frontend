@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    	<meta charset="UTF-8">
+	<title>Beacon Digital</title>
+	<meta name="description" content="Beacon Web And Agency website">
+	<meta name="keywords" content="agency, app, business, company, corporate, designer, freelance, fullpage, modern, office, personal, portfolio, professional, web, web agency">
+	<meta name="author" content="Themexriver">
+	<link rel="shortcut icon" href="assets/img/logo/f-icon 1.png" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Beacon Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary-color: #ff0000;
+      --bg-color: #0a0a0a;
+      --text-color: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: #111;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      color: var(--primary-color);
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: var(--primary-color);
+      color: #000000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: #030303;
+      transform: scale(1.05);
+    }
+
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .loader img {
+      width: 120px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .contact-info, form {
+      background: #111;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(229, 9, 20, 0.3);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      background: #0a0a0a;
+      color: #fa0808;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 0.8rem 2rem;
+      background: var(--primary-color);
+      color: #f70404;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    form button:hover {
+      background: #b2070f;
+      transform: scale(1.05);
+    }
+
+    .error {
+      color: #ffffff;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .accordion {
+      background-color: #111;
+      color: #ff0000;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      border-left: 4px solid var(--primary-color);
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+      text-align: left;
+      transition: background 0.3s;
+    }
+
+    .accordion:hover {
+      background-color: #1a1a1a;
+    }
+
+    .panel {
+      padding: 0 1rem;
+      background-color: #0f0f0f;
+      display: none;
+      overflow: hidden;
+      color: #ff0000;
+      margin-bottom: 1rem;
+      border-radius: 0 0 4px 4px;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: hwb(0 100% 0%);
+      background: #111;
+    }
+
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: #ff0101;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary-color);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      padding: 12px;
+      font-size: 24px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loader" id="loader">
+    <img src="assets/img/logo/Logo 11.png" alt="Beacon Digital Logo">
+  </div>
+
+  <header data-aos="fade-down">
+    <h1>Contact US</h1>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+  </header>
+
+  <div class="container">
+    <section class="contact-section">
+
+      <div class="contact-info" data-aos="fade-right">
+        <h1>Contact Info</h1>
+        <p>Email: beacondigitals6@gmail.com</p>
+        <p>Phone: +1234 7026758671</p>
+        <p>Address: Iworoko, 362103, Ekiti State, Nigeria</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31629.143737823826!2d5.258180894296255!3d7.721401741027278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047e28d76b151f9%3A0x8e779406e5446765!2sIworoko%20362103%2C%20Ekiti!5e0!3m2!1sen!2sng!4v1749745949681!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+<!-- modify this form HTML and place wherever you want your form -->
+      <form id="contactForm" action="https://formspree.io/f/mblyozaw" method="POST" data-aos="fade-left">
+        <div id="formErrors" class="error"></div>
+          <!-- Replace with your actual email -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </section>
+
+    <section class="faq" data-aos="fade-up">
+      <h2>FAQs</h2>
+      <button class="accordion">How quickly will I receive a reply?</button>
+      <div class="panel">
+        <p>We usually respond within 24 hours on business days.</p>
+      </div>
+      <button class="accordion">Can I get a consultation?</button>
+      <div class="panel">
+        <p>Yes! Just include a note in your message requesting a consultation.</p>
+      </div>
+      <button class="accordion">How much do your services cost?</button>
+      <div class="panel">
+        <p>Our pricing is customized based on the scope of your project. After learning about your goals, we’ll provide a detailed proposal with transparent pricing—no hidden fees</p>
+      </div>
+      <button class="accordion">Can you help improve my website’s SEO?</button>
+      <div class="panel">
+        <p>Definitely. We offer complete SEO services including keyword research, on-page optimization, technical SEO, and ongoing performance tracking to help boost your search engine rankings.</p>
+      </div>
+      <button class="accordion">Do you work with small businesses and startups?</button>
+      <div class="panel">
+        <p>Absolutely! We love helping startups and small businesses grow. Whether you’re launching something new or scaling up, we tailor our strategies to fit your needs and budget.</p>
+      </div>
+      <button class="accordion">How do I get started with Beacon Digital?</button>
+      <div class="panel">
+        <p>It’s simple! Just fill out our contact form or email us directly. We’ll schedule a free consultation to learn about your project and discuss how we can help.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+			<div class="container">
+				<div class="bi-footer-cta-content headline d-flex align-items-center  justify-content-between flex-wrap" data-background="assets/img/bg/cta-bg.png">
+					<div class="bi-footer-cta-text"> 
+						<h3>We delever the best service</h3>
+					</div>
+					<div class="bi-cta-btn">
+						<div class="bi-btn-3 text-uppercase">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+  <footer id="contact" aria-label="Site footer with quick links and social media">
+  <div class="quick-links" role="navigation" aria-label="Quick links navigation">
+  </div>
+  <span><h1>Social Media</h1></span>
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-pinterest"></i></a>
+			<div class="container">
+    <div>
+    </div>
+      <div class="bi-footer-widget-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="about-widget">
+								<h3>Working Together
+								Ideas come to life</h3>
+								<p>
+									No matter how big your company is, as you expand and reach new highs you’ll want an agency to have your back. One with a process
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h3 class="widget-title">Quick link</h3>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="About us.html">About Us/Team</a></li>
+									<li><a href="contact us.html">Contact Us</a></li>
+									<li><a href="privacy.html">Privacy & Policy</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h3 class="widget-title">Development</h3>
+								<ul>
+									<li><a href="#">Front End (HTML, CSS, React)</a></li>
+									<li><a href="#">Backend (Node.js, MongoDB)</a></li>
+									<li><a href="#">iOS (Swift)</a></li>
+									<li><a href="#">Android (Kotlin, Flutter)</a></li>
+									<li><a href="#">Post Delivery Support</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h3 class="widget-title">About Us</h3>
+								<ul>
+									 <li><p>Beacon Digital helps brands grow with smart tech, beautiful design, and serious creativity.</p></ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+        <h1>Contact Us</h1>
+      <ul>
+        Email: beacondigitals6@gmail.com</li> </ul>Phone: +234 7026758671</li>
+       </ul>
+		   <div class="bi-footer-logo-area">
+			   <div class="container">
+				        <div class="bi-footer-logo">
+			     <div class="brand-logo text-align">
+				          <a href="index.html"><img src="assets/img/logo/Logo 11.png" alt="Logo" style="width: 100px; height: auto;"></a>
+		</div>
+   <div class="copyright">
+     &copy; 2025 Beacon Digital Agency. All rights reserved.
+  </div>
+</footer>
+  <a href="https://wa.me/2347026758671" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</footer>
+<!--For Js Library -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/knob.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/ScrollToPlugin.min.js"></script>
+<script src="assets/js/ScrollSmoother.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/jquery.filterizr.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/hover-revel.js"></script>
+<script src="assets/js/split-type.min.js"></script>
+<script src="assets/js/parallax-scroll.js"></script>
+<script src="assets/js/jquery.marquee.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/tilt.jquery.min.js"></script>
+<script src="assets/js/matter.min.js"></script>
+<script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    window.addEventListener('load', () => {
+      document.getElementById('loader').style.display = 'none';
+    });
+
+    document.querySelectorAll('.accordion').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const panel = btn.nextElementSibling;
+        if (panel.style.display === 'block') {
+          panel.style.display = 'none';
+        } else {
+          panel.style.display = 'block';
+          panel.style.animation = 'fadeIn 0.5s ease forwards';
+        }
+      });
+    });
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const errorDiv = document.getElementById('formErrors');
+      errorDiv.textContent = '';
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!name || !email || !message) {
+        errorDiv.textContent = 'All fields are required.';
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        errorDiv.textContent = 'Please enter a valid email address.';
+        return;
+      }
+
+      fetch(this.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      })
+        .then(response => {
+          if (response.ok) {
+            alert('Thank you! Your message has been sent.');
+            this.reset();
+          } else {
+            alert('There was a problem submitting your message. Please try again later.');
+          }
+        })
+        .catch(() => {
+          alert('There was a problem connecting to the server. Please try again later.');
+        });
+    });
+  </script>
+</body>
+
+</html>
