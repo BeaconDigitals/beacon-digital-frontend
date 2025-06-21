@@ -256,7 +256,12 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31629.143737823826!2d5.258180894296255!3d7.721401741027278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047e28d76b151f9%3A0x8e779406e5446765!2sIworoko%20362103%2C%20Ekiti!5e0!3m2!1sen!2sng!4v1749745949681!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 <!-- modify this form HTML and place wherever you want your form -->
-      <form id="contactForm" action="https://formspree.io/f/mblyozaw" method="POST" data-aos="fade-left">
+  <form action="https://beacon-digital-backend.onrender.com/api/contact" method="POST" id="contactForm" class="contact-form" 
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        data-aos-easing="ease-in-out"
+        data-aos="fade-left">
         <div id="formErrors" class="error"></div>
           <!-- Replace with your actual email -->
         <input type="hidden" name="_captcha" value="false">
@@ -469,7 +474,7 @@
         return;
       }
 
-      fetch(this.action, {
+      fetch('https://beacon-digital-backend.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, message })
@@ -477,7 +482,7 @@
         .then(response => {
           if (response.ok) {
             alert('Thank you! Your message has been sent.');
-            this.reset();
+            document.getElementById('contactForm').reset();
           } else {
             alert('There was a problem submitting your message. Please try again later.');
           }
