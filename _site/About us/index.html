@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beacon Digital - Full Website</title>
+<meta name="description" content="Beacon Digital helps brands grow with smart tech, beautiful design, and serious creativity.">
+<meta property="og:title" content="Beacon Digital - Full Website">
+<meta property="og:description" content="Beacon Digital helps brands grow with smart tech, beautiful design, and serious creativity.">
+<meta property="og:image" content="https://yourdomain.com/assets/img/logo/Logo11.png">
+<meta property="og:url" content="https://yourdomain.com">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95LM4QLBST"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-95LM4QLBST');
+</script>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<style>
+body {margin:0;font-family:sans-serif;background:#000;color:#ffffff;overflow-x:hidden;}
+header, footer, section {padding:2rem;}
+#loader {position:fixed;top:0;left:0;width:100%;height:100%;background:#000;display:flex;align-items:center;justify-content:center;z-index:9999;}
+#progress-bar {position:fixed;top:0;left:0;height:4px;background:#e60012;width:0;z-index:9999;}
+#modeToggle {position:fixed;top:1rem;right:1rem;padding:0.5rem 1rem;background:#e60012;color:#fff;border:none;cursor:pointer;}
+#backToTop {display:none;position:fixed;bottom:4rem;left:1rem;padding:0.5rem;background:#e60012;color:#fff;border:none;cursor:pointer;}
+.light-mode {background:#fff;color:#000;}
+.light-mode header, .light-mode footer, .light-mode section {background:#fff;color:#000000;}
+.cookie-consent {position:fixed;bottom:0;width:100%;background:#222;padding:1rem;text-align:center;z-index:1000;}
+.cookie-consent button {margin-left:1rem;padding:0.3rem 0.7rem;background:#e60012;color:#fff;border:none;cursor:pointer;}
+footer a {color:#e60012;text-decoration:none;} p {
+color: #ebebeb;
+}
+
+.sponsors-section {
+      padding: 2rem 0;
+      background: #111;
+      text-align: center;
+    }
+    .sponsors-carousel {
+      display: flex;
+      overflow: hidden;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+    .sponsors-carousel img {
+      flex: 0 0 auto;
+      height: 50px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+    .sponsors-carousel img:hover {
+      filter: grayscale(0%);
+    }
+/* Updated Team Section Styles */
+#team {text-align:center;}
+#team h2 {font-size:2.5rem;margin-bottom:1rem;}
+.team-grid {display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;}
+.team-card {background:#111;padding:2rem;border-radius:0.5rem;transition:transform 0.3s, box-shadow 0.3s;max-width:220px;}
+.team-card:hover {transform:translateY(-8px);box-shadow:0 10px 20px rgba(230,0,18,0.4);}
+.team-card img {width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:1rem;border:3px solid #e60012;}
+.team-card h3 {margin:0;font-size:1.2rem;}
+.team-card p {margin:0.3rem 0 0;font-size:0.9rem;color:#e60012;letter-spacing:1px;}
+
+input, textarea {display:block;width:100%;margin-bottom:1rem;padding:0.5rem;border:1px solid #ccc;border-radius:4px;}
+button[type="submit"] {background:#e60012;color:#fff;border:none;padding:0.5rem 1rem;border-radius:4px;cursor:pointer;}
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      padding: 12px;
+      font-size: 24px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+.bi-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.bi-team-list .col-md-4 {
+  flex: 0 0 30%;
+  max-width: 30%;
+  min-width: 250px;
+}
+@media (max-width: 991px) {
+  .bi-team-list .col-md-4 {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .bi-team-list .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div id="loader">Loading...</div>
+<div id="progress-bar"></div>
+<header>
+  <h1 id="main-title"></h1>
+</header>
+<section id="about" data-aos="fade-up">
+ <h1><span style="color:#e60012;"> Welcome to Beacon Digital Agency</span></h1>
+    <p><strong>Beacon Digital Agency</strong> — your trusted partner in digital transformation and creative innovation. Founded by <strong>Olamilekan Amujosafe</strong>, Beacon Digital has been empowering businesses for over <strong>5 years</strong>, delivering exceptional results across web development, branding, marketing, and design.</p>
+
+    <p>With a passionate team of <strong>10+ skilled experts</strong>, we blend <strong>technology, creativity, and strategy</strong> to help brands grow and stand out. From startups to established enterprises, we’ve partnered with companies across industries, helping them unlock their full potential.</p>
+
+    <h3><span style="color:#e60012;"><strong>Our Mission</strong></span></h3>
+    <p>To help ambitious brands grow with smart technology, beautiful design, and serious creativity.</p>
+
+    <h3><span style="color:#e60012;"><strong>Why Choose Us?</strong></span></h3>
+    <ul>
+      <li>✅ 5+ Years of Proven Experience</li>
+      <li>✅ 10+ Dedicated Professionals</li>
+      <li>✅ Results-Driven Approach</li>
+      <li>✅ Beautiful, User-Friendly Designs</li>
+      <li>✅ Innovative Solutions Tailored to Your Needs</li>
+    </ul>
+
+    <p>At Beacon Digital, <strong>your success is our priority</strong>. We don’t just deliver projects — we build relationships.</p>
+  </section>
+
+<!-- Start of Team section
+	============================================= -->
+<section id="bi-team-3" class="bi-team-section-3 position-relative">
+    <span class="bi-shape-anim anim_1 position-absolute"><img src="assets/img/icon/is8.png" alt=""></span>
+    <span class="bi-shape-anim anim_2 position-absolute"><img src="assets/img/icon/is9.png" alt=""></span>
+    <div class="container">
+        <div class="bi-section-title-3 text-center headline pera-content">
+            <div class="bi-subtitle text-uppercase wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                our Team members
+            </div>
+            <h2 class="headline-title">Our Experiences Team</h2>
+        </div>
+        <div class="row bi-team-list">
+            <div class="col-md-4">
+                <div class="bi-team-item-3 text-center">
+                    <div class="bi-team-img-social position-relative">
+                        <img src="assets/img/team/tm3.1.jpg" alt="">
+                        <div class="team-social position-absolute">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="bi-team-text headline text-uppercase">
+                        <h3><a href="team-single.html">Rachana Sheth</a></h3>
+                        <span>Full Stack Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bi-team-item-3 text-center">
+                    <div class="bi-team-img-social position-relative">
+                        <img src="assets/img/team/tm3.2.jpg" alt="">
+                        <div class="team-social position-absolute">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="bi-team-text headline text-uppercase">
+                        <h3><a href="team-single.html">Olamilekan Amujosafe</a></h3>
+                        <span> CEO / Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bi-team-item-3 text-center">
+                <div class="bi-team-img-social position-relative">
+                  <img src="assets/img/team/tm3.3.jpg" alt="">
+                  <div class="team-social position-absolute">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="bi-team-text headline text-uppercase">
+                  <h3><a href="team-single.html">Steve Behunin</a></h3>
+                  <span>UI/UX Designer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bi-team-item-3 text-center">
+                <div class="bi-team-img-social position-relative">
+                  <img src="assets/img/team/tm3.4.jpg" alt="">
+                  <div class="team-social position-absolute">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="bi-team-text headline text-uppercase">
+                  <h3><a href="team-single.html">Priya Patel</a></h3>
+                  <span>Project Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bi-team-item-3 text-center">
+                <div class="bi-team-img-social position-relative">
+                  <img src="assets/img/team/tm3.5.jpg" alt="">
+                  <div class="team-social position-absolute">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="bi-team-text headline text-uppercase">
+                  <h3><a href="team-single.html">Ahmed Musa</a></h3>
+                  <span>Backend Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bi-team-item-3 text-center">
+                <div class="bi-team-img-social position-relative">
+                  <img src="assets/img/team/tm3.6.jpg" alt="">
+                  <div class="team-social position-absolute">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="bi-team-text headline text-uppercase">
+                  <h3><a href="team-single.html">Linda Okafor</a></h3>
+                  <span>Digital Marketer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bi-team-item-3 text-center">
+                <div class="bi-team-img-social position-relative">
+                  <img src="assets/img/team/tm3.7.jpg" alt="">
+                  <div class="team-social position-absolute">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="bi-team-text headline text-uppercase">
+                  <h3><a href="team-single.html">Chinedu Eze</a></h3>
+                  <span>Brand Strategist</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bi-team-item-3 text-center">
+                <div class="bi-team-img-social position-relative">
+                  <img src="assets/img/team/tm3.8.jpg" alt="">
+                  <div class="team-social position-absolute">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="bi-team-text headline text-uppercase">
+                  <h3><a href="team-single.html">Maria Lopez</a></h3>
+                  <span>Content Writer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bi-team-item-3 text-center">
+                <div class="bi-team-img-social position-relative">
+                  <img src="assets/img/team/tm3.9.jpg" alt="">
+                  <div class="team-social position-absolute">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="bi-team-text headline text-uppercase">
+                  <h3><a href="team-single.html">Olamilekan Amujosafe</a></h3>
+                  <span>Founder & CEO</span>
+                </div>
+              </div>
+            </div></div>
+            <!-- Add more team members as needed -->
+        </div>
+    </div>
+</section>
+<!-- End of Team section
+	============================================= -->
+<section class="sponsors-section">
+    <h1><span style="color:#e60012;">Trusted by Top Brands</span></h1>
+    <div class="sponsors-carousel">
+      <img src="assets/img/sponsor/4.png" alt="Sponsor 1">
+      <img src="assets/img/sponsor/5.png" alt="Sponsor 2">
+      <img src="assets/img/sponsor/7.png" alt="Sponsor 3">
+      <img src="assets/img/sponsor/12.png" alt="Sponsor 4">
+      <img src="assets/img/sponsor/2.png" alt="Sponsor 5">
+      <img src="assets/img/sponsor/9.png" alt="Sponsor 6">
+    </div>
+  </section>
+<section id="contact" data-aos="fade-up">
+  <h2><span style="color:#e60012;">Contact Us</span></h2>
+   <form action="https://beacon-digital-backend.onrender.com/api/contact" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+<section id="newsletter" data-aos="fade-up">
+   <h2><span style="color:#e60012;">Subscribe to Our Newsletter</span></h2>
+   <form action="https://beacon-digital-backend.onrender.com/api/contact" method="POST">
+    <input type="email" name="email" placeholder="Your Email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+<footer>
+<!-- Start of Footer  section
+	============================================= -->
+	<footer id="bi-footer" class="bi-footer-section" data-background="assets/img/bg/footer-bg.png">
+		<div class="bi-footer-cta black-footer position-relative">
+			<div class="container">
+				<div class="bi-footer-cta-content headline d-flex align-items-center  justify-content-between flex-wrap" data-background="assets/img/bg/cta-bg.png">
+					<div class="bi-footer-cta-text"> 
+						<h3>Looking for a
+						Design Parner?</h3>
+					</div>
+					<div class="bi-cta-btn">
+						<div class="bi-btn-3 text-uppercase">
+							<a href="contact us.html">contact us <img src="assets/img/icon/arrow.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				</div>
+			</div>
+		</div>
+  <footer id="contact" aria-label="Site footer with quick links and social media">
+  <div class="quick-links" role="navigation" aria-label="Quick links navigation">
+  </div>
+  <span><h1>Social Media</h1></span>
+				<span style="color:#e60012;"><a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-pinterest"></i></a></span>
+			<div class="container">
+    <div>
+      <div class="bi-footer-widget-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="about-widget">
+								<h2><span style="color:#e60012;">Working Together
+								Ideas come to life</span></h2>
+								<p>
+									No matter how big your company is, as you expand and reach new highs you’ll want an agency to have your back. One with a process
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h1 class="widget-title"><span style="color:#e60012;">Quick link</span></h1>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="About us.html">About Us/Team</a></li>
+									<li><a href="contact us.html">Contact Us</a></li>
+									<li><a href="privacy.html">Privacy & Policy</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h2 class="widget-title"><span style="color:#e60012;">Development</span></h2>
+								<ul>
+									<li><a href="#">Front End (HTML, CSS, React)</a></li>
+									<li><a href="#">Backend (Node.js, MongoDB)</a></li>
+									<li><a href="#">iOS (Swift)</a></li>
+									<li><a href="#">Android (Kotlin, Flutter)</a></li>
+									<li><a href="#">Post Delivery Support</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h3 class="widget-title"><span style="color:#e60012;">About Us</span></h3>
+								<ul>
+									<li><p>Beacon Digital helps brands grow with smart tech, beautiful design, and serious creativity.</p><ul></ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+        <h1><span style="color:#e60012;">Contact Us</span></h1>
+      <ul>
+        Email: beacondigitals6@gmail.com</li> </ul>Phone: +234 7026758671</li>
+       </ul>
+		   <div class="bi-footer-logo-area">
+			   <div class="container">
+				        <div class="bi-footer-logo">
+			     <div class="brand-logo text-align">
+				          <a href="index.html"><img src="assets/img/logo/Logo 11.png" alt="Logo" style="width: 100px; height: auto;"></a>
+		</div>
+  <div class="copyright">
+    &copy; 2025 Beacon Digital Agency. All rights reserved.
+  </div>
+  <a href="https://wa.me/2347026758671" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</footer>
+<div class="cookie-consent" id="cookieConsent">
+  This website uses cookies to ensure you get the best experience. <button onclick="document.getElementById('cookieConsent').style.display='none'">Got it!</button>
+</div>
+<button id="modeToggle">Light Mode</button>
+<button id="backToTop">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" onerror="console.error('particles.js failed to load');"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</footer>
+ <!-- For Js Library -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/knob.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/ScrollToPlugin.min.js"></script>
+<script src="assets/js/ScrollSmoother.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/jquery.filterizr.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/hover-revel.js"></script>
+<script src="assets/js/split-type.min.js"></script>
+<script src="assets/js/parallax-scroll.js"></script>
+<script src="assets/js/jquery.marquee.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/tilt.jquery.min.js"></script>
+<script src="assets/js/matter.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+<button id="backToTop">&#8679;</button>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    gsap.to(".sponsors-carousel", {
+      xPercent: -50,
+      repeat: -1,
+      ease: "none",
+      duration: 30
+    });
+AOS.init();
+window.addEventListener('load', () => document.getElementById('loader').style.display = 'none');
+try {
+  particlesJS("header", {
+    "particles": {
+      "number": { "value": 80 },
+      "shape": { "type": "star" },
+      "color": { "value": "#e60012" },
+      "opacity": { "value": 0.6 },
+      "size": { "value": 4 },
+      "line_linked": { "enable": true, "color": "#e60012", "opacity": 0.4 },
+      "move": { "speed": 2 }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" }
+      }
+    }
+  });
+} catch (err) {
+  console.error("ParticlesJS error:", err);
+}
+const titleText = "Welcome to Beacon Digital";
+let i = 0;
+function typeWriter() {
+  if (i < titleText.length) {
+    document.getElementById("main-title").innerHTML += titleText.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+  gsap.to(".sponsors", {
+  xPercent: -50,
+  repeat: -1,
+  ease: "none",
+  duration: 30
+});
+
+}
+typeWriter();
+gsap.utils.toArray("section").forEach(section => {
+  gsap.to(section, {
+    backgroundPositionY: "+=200px",
+    ease: "none",
+    scrollTrigger: {
+      trigger: section,
+      start: "top bottom",
+      scrub: true
+    }
+  });
+});
+document.getElementById('modeToggle').onclick = () => {
+  document.body.classList.toggle('light-mode');
+  document.getElementById('modeToggle').textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+};
+  window.onscroll = () => {
+    const scrollTop = window.scrollY;
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    document.getElementById('progress-bar').style.width = (scrollTop / totalHeight) * 100 + '%';
+    document.getElementById('backToTop').style.display = scrollTop > 300 ? 'block' : 'none';
+  };
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+  document.getElementById('progress-bar').style.width = (scrollTop / totalHeight) * 100 + '%';
+  document.getElementById('backToTop').style.display = scrollTop > 300 ? 'block' : 'none';
+});
+document.getElementById('backToTop').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+var teamSwiper = new Swiper('.bi-team-slider-3.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: '.bi-team-button-next',
+    prevEl: '.bi-team-button-prev',
+  },
+  breakpoints: {
+    991: { slidesPerView: 3 },
+    767: { slidesPerView: 2 },
+    575: { slidesPerView: 1 }
+  }
+});
+</script>
+</body>
+</html>

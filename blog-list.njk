@@ -1,0 +1,25 @@
+---
+layout: layout.njk
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
+permalink: "blog/index.html"
+---
+
+<h1>Blog</h1>
+<ul>
+  {% for post in collections.blog | reverse %}
+    <li>
+      <a href="{{ post.url }}"><h2>{{ post.data.title }}</h2></a>
+      <p>{{ post.data.date | date("MMMM D, YYYY") }} by {{ post.data.author }}</p>
+      {% if post.data.image %}
+        <img src="{{ post.data.image | url }}" alt="{{ post.data.title }}" style="max-width:200px;">
+      {% endif %}
+      <div>
+        {{ post.templateContent | safe }}
+      </div>
+      <a href="{{ post.url }}">Read Full Post</a>
+    </li>
+  {% endfor %}
+</ul>

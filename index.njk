@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog Home</title>
+</head>
+<body>
+  <h1>Welcome to My Blog</h1>
+  <h2>Latest Posts</h2>
+  <ul>
+    {% for post in collections.blog | reverse | slice(0,3) %}
+      <li>
+        <a href="{{ post.url }}"><h2>{{ post.data.title }}</h2></a>
+        <p>{{ post.data.date | date("MMMM D, YYYY") }} by {{ post.data.author }}</p>
+        {% if post.data.image %}
+          <img src="{{ post.data.image | url }}" alt="{{ post.data.title }}" style="max-width:200px;">
+        {% endif %}
+        <div>
+          {{ post.templateContent | safe }}
+        </div>
+        <a href="{{ post.url }}">Read Full Post</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="/blog/">See all blog posts</a>
+</body>
+</html>
