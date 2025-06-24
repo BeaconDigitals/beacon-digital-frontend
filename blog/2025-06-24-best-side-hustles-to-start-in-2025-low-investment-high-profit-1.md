@@ -6,6 +6,8 @@ image: /assets/img/blog/best-side-hustles-to-start-in-2025-low-investment-high-p
 ---
 The search for **profitable online side hustles** keeps growing, especially with the rise of **remote work** and **AI-powered businesses**. If you’re looking to boost your earnings or build a new career path, **2025** is the perfect year to start a **side hustle** that requires little upfront investment but offers **high profit potential**. Whether you want to earn passive income or build a full-time business, here are the **best side hustle ideas to start now**.
 
+![best side hustles to start in 2025](/assets/img/blog/blg2_1.jpg "Freelancing business")
+
 ## 1. Freelance Digital Services
 
 Platforms like Upwork, [Fiverr](https://www.fiverr.com/), and Freelancer make it easy to sell skills such as **graphic design**, **copywriting**, **social media management**, and **web development**. All you need is a laptop and an internet connection to get started.
@@ -18,6 +20,8 @@ Platforms like Upwork, [Fiverr](https://www.fiverr.com/), and Freelancer make it
 
 > 🗒️ *Want to stand out on Fiverr? Check out our guide on [how to build a personal brand online](#).*
 
+![Best ecommerce business ](/assets/img/blog/blg2_3.jpg "Print-on-Demand E-commerce")
+
 ## 2. Print-on-Demand E-commerce
 
 Launch an online store selling custom t-shirts, mugs, or phone cases using **print-on-demand** services like [Printful](https://www.printful.com/) or Teespring. You design the products, and the service handles printing and shipping.
@@ -28,6 +32,8 @@ Launch an online store selling custom t-shirts, mugs, or phone cases using **pri
 * Creative freedom  
 * Scalable with marketing
 
+![Online Tutoring and Coaching](/assets/img/blog/blg2_4.jpg "Online Tutoring and Coaching")
+
 ## 3. Online Tutoring and Coaching
 
 If you’re knowledgeable in a subject or have a special skill, platforms like **VIPKid**, **Preply**, or even **Zoom** allow you to teach or coach students worldwide.
@@ -37,6 +43,8 @@ If you’re knowledgeable in a subject or have a special skill, platforms like *
 * Minimal setup  
 * Growing demand for remote learning  
 * Can be done part-time
+
+![Share your expertise through videos, blogs, or podcasts. ](/assets/img/blog/blg2_2.jpg " Content Creation (YouTube, Blogging, Podcasting)")
 
 ## 4. Content Creation (YouTube, Blogging, Podcasting)
 
@@ -50,6 +58,8 @@ Share your expertise or passion through videos, blogs, or podcasts. Monetize thr
 
 > ⚡ Don’t miss our post on [Top Tools for Freelancers in 2025](#).
 
+![Starting an online store](/assets/img/blog/blg4.jpg "Dropshipping Business")
+
 ## 5. Dropshipping
 
 Start an online store without holding inventory. When someone buys from your store, the product ships directly from the supplier.
@@ -59,6 +69,8 @@ Start an online store without holding inventory. When someone buys from your sto
 * No inventory costs  
 * Wide range of products  
 * Focus on marketing and customer service
+
+![Businesses and entrepreneurs](/assets/img/blog/blg2_5.jpg "virtual assistant (VA)")
 
 ## 6. Virtual Assistant
 
