@@ -1,0 +1,19 @@
+---
+layout: layout.njk
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
+permalink: "blog/index.html"
+---
+
+<article>
+  <h1>{{ title }}</h1>
+  <p><small>By {{ author }} on {{ date | date("MMMM D, YYYY") }}</small></p>
+  {% if image %}
+    <img src="{{ image | url }}" alt="{{ title }}" style="max-width:400px;">
+  {% endif %}
+  <div>
+    {{ content | safe }}
+  </div>
+</article>

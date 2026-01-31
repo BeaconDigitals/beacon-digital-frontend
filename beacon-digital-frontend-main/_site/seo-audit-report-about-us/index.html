@@ -1,0 +1,420 @@
+<h1>SEO Audit Report: About us.html</h1>
+<p><strong>Page:</strong> About us.html<br>
+<strong>Date:</strong> 2026-01-25<br>
+<strong>Audited by:</strong> Kombai SEO Audit Tool</p>
+<hr>
+<h2>Executive Summary</h2>
+<p>The About Us page has several SEO issues that need immediate attention. While basic SEO elements like meta description and viewport tags are present, there are critical issues with page titles, URL structure, duplicate content, missing canonical tags, and structured data that significantly impact search engine optimization.</p>
+<p><strong>Overall SEO Score: 42/100</strong> ⚠️</p>
+<hr>
+<h2>Critical Issues (High Priority)</h2>
+<h3>1. ❌ Incorrect Page Title</h3>
+<p><strong>Issue:</strong> The page title doesn't reflect the actual page content.</p>
+<ul>
+<li><strong>Current:</strong> &quot;Beacon Digital - Full Website&quot;</li>
+<li><strong>Expected:</strong> &quot;About Us - Beacon Digital Agency&quot; or &quot;About Beacon Digital - Your Trusted Digital Partner&quot;</li>
+<li><strong>Impact:</strong> Misleading title reduces click-through rates from search results and confuses users</li>
+<li><strong>Line:</strong> 6</li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<pre><code class="language-html">&lt;title&gt;About Us - Beacon Digital Agency | Digital Transformation Experts&lt;/title&gt;
+</code></pre>
+<hr>
+<h3>2. ❌ URL Contains Spaces</h3>
+<p><strong>Issue:</strong> File name &quot;About us.html&quot; contains a space</p>
+<ul>
+<li><strong>Current:</strong> <code>About us.html</code></li>
+<li><strong>Expected:</strong> <code>about-us.html</code> or <code>about.html</code></li>
+<li><strong>Impact:</strong> URLs with spaces are converted to <code>%20</code> which looks unprofessional and can cause linking issues</li>
+<li><strong>SEO Impact:</strong> High - affects shareability and link building</li>
+</ul>
+<p><strong>Recommendation:</strong>
+Rename file to <code>about-us.html</code></p>
+<hr>
+<h3>3. ❌ Missing Canonical URL</h3>
+<p><strong>Issue:</strong> No canonical tag present</p>
+<ul>
+<li><strong>Impact:</strong> Risk of duplicate content penalties if this page is accessible via multiple URLs</li>
+<li><strong>SEO Impact:</strong> High - critical for preventing duplicate content issues</li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<pre><code class="language-html">&lt;link rel=&quot;canonical&quot; href=&quot;https://yourdomain.com/about-us.html&quot;&gt;
+</code></pre>
+<p>Add after line 13</p>
+<hr>
+<h3>4. ❌ Duplicate Google Analytics Code</h3>
+<p><strong>Issue:</strong> Google Analytics tracking code is included twice</p>
+<ul>
+<li><strong>Lines:</strong> 14-20 and 38-43</li>
+<li><strong>Impact:</strong> Duplicate tracking, inflated page views, inaccurate analytics data</li>
+<li><strong>SEO Impact:</strong> Medium - affects page load speed</li>
+</ul>
+<p><strong>Recommendation:</strong>
+Remove duplicate code at lines 38-43</p>
+<hr>
+<h3>5. ❌ Duplicate Viewport Meta Tag</h3>
+<p><strong>Issue:</strong> Viewport meta tag declared twice</p>
+<ul>
+<li><strong>Lines:</strong> 5 and 23</li>
+<li><strong>Impact:</strong> Code redundancy, potential browser confusion</li>
+<li><strong>SEO Impact:</strong> Low-Medium</li>
+</ul>
+<p><strong>Recommendation:</strong>
+Remove duplicate at line 23</p>
+<hr>
+<h3>6. ❌ Open Graph URL Using Placeholder</h3>
+<p><strong>Issue:</strong> OG tags use placeholder domain</p>
+<ul>
+<li><strong>Lines:</strong> 10-11: <code>https://yourdomain.com</code></li>
+<li><strong>Impact:</strong> Social media sharing will not work correctly</li>
+<li><strong>SEO Impact:</strong> High for social SEO</li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<pre><code class="language-html">&lt;meta property=&quot;og:url&quot; content=&quot;https://beacondigital.com/about-us.html&quot;&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;https://beacondigital.com/assets/img/logo/Logo11.png&quot;&gt;
+</code></pre>
+<hr>
+<h2>Major Issues (Medium Priority)</h2>
+<h3>7. ⚠️ Multiple H1 Tags</h3>
+<p><strong>Issue:</strong> Page contains 4 H1 tags instead of 1</p>
+<ul>
+<li><strong>Lines:</strong> 143, 146, 330, 381</li>
+<li><strong>Impact:</strong> Dilutes page topic focus, confuses search engines</li>
+<li><strong>SEO Impact:</strong> Medium</li>
+</ul>
+<p><strong>H1 Tags Found:</strong></p>
+<ol>
+<li><code>&lt;h1 id=&quot;main-title&quot;&gt;About Us&lt;/h1&gt;</code> (Line 143)</li>
+<li><code>&lt;h1&gt;&lt;span style=&quot;color:#e60012;&quot;&gt; Welcome to Beacon Digital Agency&lt;/span&gt;&lt;/h1&gt;</code> (Line 146)</li>
+<li><code>&lt;h1&gt;&lt;span style=&quot;color:#e60012;&quot;&gt;Trusted by Top Brands&lt;/span&gt;&lt;/h1&gt;</code> (Line 330)</li>
+<li><code>&lt;h1&gt;Social Media&lt;/h1&gt;</code> (Line 381)</li>
+</ol>
+<p><strong>Recommendation:</strong>
+Keep only one H1 (ideally line 146), convert others to H2 or H3</p>
+<hr>
+<h3>8. ⚠️ Poor Heading Hierarchy</h3>
+<p><strong>Issue:</strong> Incorrect heading structure with skipped levels and improper nesting</p>
+<ul>
+<li>H1 → H3 (skips H2 at line 151)</li>
+<li>Multiple H1s used for subheadings</li>
+<li>Footer uses H1-H3 for non-hierarchical content</li>
+</ul>
+<p><strong>Recommendation:</strong>
+Proper structure:</p>
+<ul>
+<li>H1: Main page title (one only)</li>
+<li>H2: Major sections (Our Mission, Why Choose Us, Our Team, etc.)</li>
+<li>H3: Subsections within H2s</li>
+</ul>
+<hr>
+<h3>9. ⚠️ Missing Meta Robots Tag</h3>
+<p><strong>Issue:</strong> No robots meta tag specified</p>
+<ul>
+<li><strong>Impact:</strong> No explicit crawling instructions for search engines</li>
+<li><strong>SEO Impact:</strong> Low-Medium</li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<pre><code class="language-html">&lt;meta name=&quot;robots&quot; content=&quot;index, follow&quot;&gt;
+</code></pre>
+<hr>
+<h3>10. ⚠️ Missing Structured Data (Schema.org)</h3>
+<p><strong>Issue:</strong> No structured data markup for Organization, AboutPage, or Person entities</p>
+<ul>
+<li><strong>Impact:</strong> Reduced rich snippet opportunities in search results</li>
+<li><strong>SEO Impact:</strong> Medium</li>
+</ul>
+<p><strong>Recommendation:</strong>
+Add JSON-LD structured data:</p>
+<pre><code class="language-html">&lt;script type=&quot;application/ld+json&quot;&gt;
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;AboutPage&quot;,
+  &quot;mainEntity&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;Beacon Digital Agency&quot;,
+    &quot;founder&quot;: {
+      &quot;@type&quot;: &quot;Person&quot;,
+      &quot;name&quot;: &quot;Olamilekan Amujosafe&quot;
+    },
+    &quot;foundingDate&quot;: &quot;2020&quot;,
+    &quot;description&quot;: &quot;Beacon Digital helps brands grow with smart tech, beautiful design, and serious creativity.&quot;,
+    &quot;numberOfEmployees&quot;: &quot;10+&quot;,
+    &quot;url&quot;: &quot;https://beacondigital.com&quot;,
+    &quot;email&quot;: &quot;beacondigitals6@gmail.com&quot;,
+    &quot;telephone&quot;: &quot;+234-702-675-8671&quot;,
+    &quot;sameAs&quot;: [
+      &quot;https://facebook.com/beacondigital&quot;,
+      &quot;https://twitter.com/beacondigital&quot;,
+      &quot;https://youtube.com/beacondigital&quot;
+    ]
+  }
+}
+&lt;/script&gt;
+</code></pre>
+<hr>
+<h3>11. ⚠️ Insufficient Image Alt Text</h3>
+<p><strong>Issue:</strong> Many images lack descriptive alt attributes</p>
+<p><strong>Images with Issues:</strong></p>
+<ul>
+<li>Line 169-170: Decorative images have empty alt</li>
+<li>Line 182: <code>alt=&quot;&quot;</code> - should describe team member</li>
+<li>Line 198: <code>alt=&quot;&quot;</code> - team member image</li>
+<li>Lines 214, 230, 246, 262, 278, 294, 310: All team member images have empty alt</li>
+<li>Lines 332-337: Sponsor logos have generic alt text like &quot;Sponsor 1&quot;</li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<ul>
+<li>Team images: <code>alt=&quot;Rachana Sheth - Full Stack Developer at Beacon Digital&quot;</code></li>
+<li>Sponsor logos: <code>alt=&quot;[Company Name] - Beacon Digital Partner&quot;</code></li>
+<li>Decorative images: Keep <code>alt=&quot;&quot;</code> only if truly decorative</li>
+</ul>
+<hr>
+<h3>12. ⚠️ Missing Language Attributes on Social Links</h3>
+<p><strong>Issue:</strong> Social media links lack proper attributes</p>
+<ul>
+<li>Lines 184-186, 200-202, etc.: Links use <code>href=&quot;#&quot;</code></li>
+<li><strong>Impact:</strong> Non-functional links, poor user experience</li>
+<li><strong>SEO Impact:</strong> Medium - affects user engagement metrics</li>
+</ul>
+<p><strong>Recommendation:</strong>
+Add actual social media URLs or remove placeholder links</p>
+<hr>
+<h3>13. ⚠️ Broken/Incomplete HTML Structure</h3>
+<p><strong>Issue:</strong> Multiple structural issues</p>
+<ul>
+<li>Lines 375-377: Empty closing divs without opening tags</li>
+<li>Nested footer elements (line 378 inside another footer at 356)</li>
+<li>Line 444: Unclosed <code>&lt;/ul&gt;</code> tags</li>
+</ul>
+<p><strong>SEO Impact:</strong> Medium - can affect crawlability</p>
+<hr>
+<h2>Minor Issues (Low Priority)</h2>
+<h3>14. ℹ️ Missing Twitter Meta Tags</h3>
+<p><strong>Issue:</strong> Only basic Twitter card meta present</p>
+<ul>
+<li><strong>Line:</strong> 12 - Only <code>twitter:card</code> specified</li>
+<li><strong>Missing:</strong> <code>twitter:site</code>, <code>twitter:creator</code>, <code>twitter:title</code>, <code>twitter:description</code>, <code>twitter:image</code></li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<pre><code class="language-html">&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
+&lt;meta name=&quot;twitter:site&quot; content=&quot;@beacondigital&quot;&gt;
+&lt;meta name=&quot;twitter:title&quot; content=&quot;About Us - Beacon Digital Agency&quot;&gt;
+&lt;meta name=&quot;twitter:description&quot; content=&quot;Learn about Beacon Digital Agency, your trusted partner in digital transformation with 5+ years of experience and 10+ skilled experts.&quot;&gt;
+&lt;meta name=&quot;twitter:image&quot; content=&quot;https://beacondigital.com/assets/img/logo/Logo11.png&quot;&gt;
+</code></pre>
+<hr>
+<h3>15. ℹ️ Missing Open Graph Type</h3>
+<p><strong>Issue:</strong> No <code>og:type</code> meta tag</p>
+<ul>
+<li><strong>Impact:</strong> Facebook may not properly categorize the page</li>
+<li><strong>SEO Impact:</strong> Low</li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<pre><code class="language-html">&lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;
+</code></pre>
+<hr>
+<h3>16. ℹ️ Excessive External Scripts</h3>
+<p><strong>Issue:</strong> 30+ external and internal scripts loaded</p>
+<ul>
+<li><strong>Lines:</strong> 14, 24, 33, 36, 44-45, 464-502</li>
+<li><strong>Impact:</strong> Slow page load time, affects Core Web Vitals</li>
+<li><strong>SEO Impact:</strong> Medium - page speed is a ranking factor</li>
+</ul>
+<p><strong>Scripts duplicated:</strong></p>
+<ul>
+<li>jQuery loaded twice (lines 470 and 497)</li>
+<li>GSAP loaded multiple times (lines 466, 475, 500, 502)</li>
+<li>AOS loaded twice (lines 464 and 498)</li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<ul>
+<li>Consolidate duplicate scripts</li>
+<li>Load non-critical scripts with <code>defer</code> or <code>async</code></li>
+<li>Consider bundling and minifying scripts</li>
+</ul>
+<hr>
+<h3>17. ℹ️ Missing Breadcrumb Navigation</h3>
+<p><strong>Issue:</strong> No breadcrumb markup</p>
+<ul>
+<li><strong>Impact:</strong> Reduced navigation clarity for users and search engines</li>
+<li><strong>SEO Impact:</strong> Low</li>
+</ul>
+<p><strong>Recommendation:</strong>
+Add breadcrumb with structured data:</p>
+<pre><code class="language-html">&lt;nav aria-label=&quot;Breadcrumb&quot;&gt;
+  &lt;ol itemscope itemtype=&quot;https://schema.org/BreadcrumbList&quot;&gt;
+    &lt;li itemprop=&quot;itemListElement&quot; itemscope itemtype=&quot;https://schema.org/ListItem&quot;&gt;
+      &lt;a itemprop=&quot;item&quot; href=&quot;index.html&quot;&gt;
+        &lt;span itemprop=&quot;name&quot;&gt;Home&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;meta itemprop=&quot;position&quot; content=&quot;1&quot; /&gt;
+    &lt;/li&gt;
+    &lt;li itemprop=&quot;itemListElement&quot; itemscope itemtype=&quot;https://schema.org/ListItem&quot;&gt;
+      &lt;span itemprop=&quot;name&quot;&gt;About Us&lt;/span&gt;
+      &lt;meta itemprop=&quot;position&quot; content=&quot;2&quot; /&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+</code></pre>
+<hr>
+<h3>18. ℹ️ Inline Styles in Content</h3>
+<p><strong>Issue:</strong> Extensive use of inline styles with <code>style=&quot;color:#e60012;&quot;</code></p>
+<ul>
+<li><strong>Lines:</strong> 146, 151, 154, 330, 341, 350, 382, 394, 405, 420, 434, 442</li>
+<li><strong>Impact:</strong> Harder to maintain, increases HTML size</li>
+<li><strong>SEO Impact:</strong> Low - but affects maintainability</li>
+</ul>
+<p><strong>Recommendation:</strong>
+Create CSS classes instead:</p>
+<pre><code class="language-css">.text-primary { color: #e60012; }
+</code></pre>
+<hr>
+<h3>19. ℹ️ Missing Theme Color Meta Tag</h3>
+<p><strong>Issue:</strong> No theme-color meta tag for mobile browsers</p>
+<ul>
+<li><strong>Impact:</strong> Browser UI won't match brand colors on mobile</li>
+<li><strong>SEO Impact:</strong> Low</li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<pre><code class="language-html">&lt;meta name=&quot;theme-color&quot; content=&quot;#e60012&quot;&gt;
+</code></pre>
+<hr>
+<h3>20. ℹ️ Missing Alternate Language Tags</h3>
+<p><strong>Issue:</strong> No hreflang tags for international targeting</p>
+<ul>
+<li><strong>Impact:</strong> If site has multiple language versions, search engines won't know</li>
+<li><strong>SEO Impact:</strong> Low (only if multilingual)</li>
+</ul>
+<p><strong>Recommendation (if applicable):</strong></p>
+<pre><code class="language-html">&lt;link rel=&quot;alternate&quot; hreflang=&quot;en&quot; href=&quot;https://beacondigital.com/about-us.html&quot;&gt;
+&lt;link rel=&quot;alternate&quot; hreflang=&quot;x-default&quot; href=&quot;https://beacondigital.com/about-us.html&quot;&gt;
+</code></pre>
+<hr>
+<h2>Content Quality Assessment</h2>
+<h3>✅ Strengths:</h3>
+<ol>
+<li><strong>Good meta description</strong> - Concise and descriptive (Line 7)</li>
+<li><strong>Mobile responsive</strong> - Viewport meta tag present</li>
+<li><strong>Clear value proposition</strong> - Content explains what company does</li>
+<li><strong>Contact information present</strong> - Email and phone visible</li>
+<li><strong>Social proof</strong> - Team members and sponsors displayed</li>
+</ol>
+<h3>⚠️ Weaknesses:</h3>
+<ol>
+<li><strong>Content length</strong> - Could be more comprehensive (currently ~300 words of body content)</li>
+<li><strong>Keyword optimization</strong> - Limited use of relevant keywords</li>
+<li><strong>Internal linking</strong> - Limited contextual internal links within content</li>
+<li><strong>Call-to-action</strong> - Multiple CTAs but not strategically placed</li>
+<li><strong>Content formatting</strong> - Lacks bullet points and formatting in main content</li>
+</ol>
+<hr>
+<h2>Mobile Optimization</h2>
+<h3>✅ Good:</h3>
+<ul>
+<li>Viewport meta tag present</li>
+<li>Responsive CSS classes used (col-md-4)</li>
+<li>Touch-friendly WhatsApp button</li>
+</ul>
+<h3>⚠️ Issues:</h3>
+<ul>
+<li>Numerous scripts may impact mobile performance</li>
+<li>No AMP version for faster mobile loading</li>
+</ul>
+<hr>
+<h2>Performance Impact on SEO</h2>
+<p><strong>Estimated Issues:</strong></p>
+<ol>
+<li><strong>Render-blocking resources:</strong> Multiple CSS files loaded synchronously</li>
+<li><strong>JavaScript execution time:</strong> 30+ scripts can delay interactivity</li>
+<li><strong>Duplicate resources:</strong> jQuery, GSAP, AOS loaded multiple times</li>
+<li><strong>Missing resource hints:</strong> No preconnect/prefetch for external domains</li>
+</ol>
+<p><strong>Recommendation:</strong></p>
+<ul>
+<li>Add resource hints for external domains</li>
+<li>Implement lazy loading for below-fold images</li>
+<li>Use <code>defer</code> attribute on non-critical scripts</li>
+<li>Consider using a CDN</li>
+</ul>
+<hr>
+<h2>Accessibility Impact on SEO</h2>
+<h3>Issues Found:</h3>
+<ol>
+<li>Empty links (<code>href=&quot;#&quot;</code>) - Lines 184-186, 200-202, etc.</li>
+<li>Missing ARIA labels on some interactive elements</li>
+<li>Color contrast may be insufficient (white text on dark backgrounds)</li>
+<li>Form labels missing explicit association</li>
+</ol>
+<p><strong>Note:</strong> Accessibility issues indirectly affect SEO through user engagement metrics</p>
+<hr>
+<h2>Priority Action Plan</h2>
+<h3>Immediate (This Week):</h3>
+<ol>
+<li>✅ Fix page title to reflect &quot;About Us&quot; content</li>
+<li>✅ Rename file from &quot;About us.html&quot; to &quot;about-us.html&quot;</li>
+<li>✅ Add canonical URL tag</li>
+<li>✅ Remove duplicate Google Analytics code</li>
+<li>✅ Fix Open Graph URL placeholder</li>
+<li>✅ Reduce to single H1 tag</li>
+</ol>
+<h3>Short Term (This Month):</h3>
+<ol start="7">
+<li>⚠️ Fix heading hierarchy throughout page</li>
+<li>⚠️ Add structured data (Organization schema)</li>
+<li>⚠️ Improve all image alt texts</li>
+<li>⚠️ Remove duplicate script loading</li>
+<li>⚠️ Fix HTML structure errors</li>
+<li>⚠️ Add robots meta tag</li>
+</ol>
+<h3>Long Term (This Quarter):</h3>
+<ol start="13">
+<li>ℹ️ Implement breadcrumb navigation</li>
+<li>ℹ️ Add comprehensive Twitter meta tags</li>
+<li>ℹ️ Optimize and consolidate scripts for performance</li>
+<li>ℹ️ Replace inline styles with CSS classes</li>
+<li>ℹ️ Expand content with more keyword-rich copy</li>
+<li>ℹ️ Add internal linking strategy</li>
+</ol>
+<hr>
+<h2>Competitor Analysis Recommendations</h2>
+<p>Consider adding these elements commonly found on high-ranking About pages:</p>
+<ol>
+<li><strong>Company timeline/history section</strong></li>
+<li><strong>Awards and certifications</strong></li>
+<li><strong>Client testimonials</strong> (with schema markup)</li>
+<li><strong>Video introduction</strong></li>
+<li><strong>Company values and culture</strong></li>
+<li><strong>Case study highlights</strong></li>
+</ol>
+<hr>
+<h2>Technical SEO Checklist</h2>
+<ul>
+<li>❌ XML Sitemap (check if about-us.html is included)</li>
+<li>❌ Robots.txt (ensure page is not blocked)</li>
+<li>⚠️ HTTPS (verify SSL certificate)</li>
+<li>✅ Mobile-friendly design</li>
+<li>❌ Page speed optimization</li>
+<li>❌ Core Web Vitals compliance</li>
+<li>❌ Structured data validation</li>
+<li>❌ International targeting (if applicable)</li>
+</ul>
+<hr>
+<h2>Conclusion</h2>
+<p>The About Us page requires significant SEO improvements. <strong>The most critical issues are the incorrect page title, URL with spaces, missing canonical tag, and duplicate tracking codes.</strong> Addressing the high-priority issues will immediately improve search engine indexing and user experience.</p>
+<p><strong>Estimated Time to Fix Critical Issues:</strong> 2-4 hours<br>
+<strong>Estimated SEO Improvement:</strong> Could increase organic visibility by 40-60% after fixes</p>
+<hr>
+<h2>Tools for Further Analysis</h2>
+<p>After implementing fixes, validate with:</p>
+<ul>
+<li>Google Search Console</li>
+<li>Google PageSpeed Insights</li>
+<li>Schema.org Validator</li>
+<li>W3C HTML Validator</li>
+<li>Lighthouse Audit (Chrome DevTools)</li>
+<li>Screaming Frog SEO Spider</li>
+</ul>
+<hr>
+<p><strong>Report Generated:</strong> 2026-01-25<br>
+<strong>Auditor:</strong> Kombai SEO Audit<br>
+<strong>Next Review Date:</strong> 2026-02-25</p>

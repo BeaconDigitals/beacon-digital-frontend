@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: #f4f4f4;
+  line-height: 1.8;
+  transition: background 0.3s, color 0.3s;
+}
+
+header,
+footer {
+  background-color: #111;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header h1,
+footer p {
+  color: #e50914;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main h2 {
+  color: #e50914;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: #e50914;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.social-links {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.social-links a {
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social-links a:hover {
+  color: #e50914;
+}
+
+.policy-link {
+  color: #e50914;
+  text-decoration: underline;
+}
+
+.policy-link:hover {
+  color: #b20710;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  color: #e50914;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 9999;
+  animation: loaderFadeOut 1s ease 2s forwards;
+  will-change: opacity;
+}
+
+@keyframes loaderFadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Dark Mode */
+.light-mode {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+.light-mode header,
+.light-mode footer {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.light-mode .social-links a {
+  color: #111;
+}
+
+.light-mode .social-links a:hover {
+  color: #e50914;
+}
+
+.light-mode h3 {
+  color: #111;
+}
+
+.light-mode .policy-link {
+  color: #e50914;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10000;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.toggle-btn:hover {
+  background: #b20710;
+}
+
+.toggle-btn:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Back to Top Button */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  padding: 0.5rem;
+  background: #e60012;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  z-index: 999;
+  transition: background 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+#backToTop:hover {
+  background: #b20710;
+}
+
+#backToTop:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.3s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Footer */
+.footer-nav {
+  width: 100%;
+}
+
+.footer-title {
+  color: #e50914;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.footer-content {
+  margin-top: 2rem;
+}
+
+.footer-contact {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.footer-contact h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-contact ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-contact li {
+  margin: 0.5rem 0;
+}
+
+.footer-contact a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #e50914;
+  text-decoration: underline;
+}
+
+.bi-footer-logo-area {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.copyright {
+  color: #aaa;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Accessibility: Better contrast for footer titles */
+.widget-title {
+  color: #e60012;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .toggle-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  #backToTop {
+    bottom: 3rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+  }
+}

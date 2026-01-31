@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beacon Digital Portfolio</title>
+<meta name="description" content="Discover Beacon Digital's portfolio: web development, app development, branding, SEO, CRM, and more.">
+<meta name="keywords" content="Beacon Digital, Web Development, SEO, App Development, Branding, UI/UX, Ecommerce, CRM">
+<meta name="author" content="Beacon Digital">
+<meta name="theme-color" content="#e60012">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@beacondigitals">
+<meta name="twitter:title" content="Beacon Digital Portfolio">
+<meta name="twitter:description" content="Explore our cutting-edge portfolio in development, marketing, branding, and more.">
+<meta name="twitter:image" content="https://beacondigitals.netlify.app/images/twitter-card.jpg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Beacon Digital Portfolio">
+<meta property="og:description" content="Explore our cutting-edge portfolio in development, marketing, branding, and more.">
+<meta property="og:image" content="https://beacondigitals.netlify.app/images/og-image.jpg">
+<meta property="og:url" content="https://beacondigitals.netlify.app/">
+<meta property="og:type" content="website">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="canonical" href="https://beacondigitals.netlify.app/portfolio.html">
+<link rel="alternate" hreflang="en" href="https://beacondigitals.netlify.app/portfolio.html">
+<link rel="alternate" hreflang="x-default" href="https://beacondigitals.netlify.app/portfolio.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95LM4QLBST"></script>
+  <script>
+    globalThis.dataLayer = globalThis.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-95LM4QLBST');
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<style>
+  :root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --accent-color: #e60012;
+  }
+  body {
+    margin:0; font-family:'Poppins', sans-serif; background:var(--bg-color); color:var(--text-color);
+    transition: background 0.5s, color 0.5s;
+  }
+  .header {
+    padding:4rem 1rem; text-align:center; position:relative; z-index:2;
+  }
+  
+  .portfolio-section {
+    padding:5rem 1rem; position:relative; z-index:2;
+  }
+  .portfolio-grid {
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;
+  }
+  .portfolio-item {
+    width:100%; border-radius:8px; cursor:pointer; border:3px solid var(--accent-color);
+  }
+  .portfolio-item:hover { transform:scale(1.05); transition:0.3s; }
+  #particles-js { position:fixed; inset:0; z-index:0; pointer-events:none; }
+  #progress-bar { position:fixed; top:0; left:0; height:5px; background:var(--accent-color); width:0%; z-index:9999; }
+/* Shared icon styles for consistency */
+.beacon-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  animation: beacon-fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.beacon-icon i {
+  font-size: 2.5rem;
+  color: #0059ff;
+  animation: beacon-bounce 2s infinite;
+}
+
+/* Hover effects: color change + slight zoom */
+.beacon-icon:hover {
+  color: #22d3ee;         /* cyan-400 for hover text color */
+  transform: translateY(-4px) scale(1.05);
+}
+
+.beacon-icon:hover i {
+  color: #00d5f6;         /* matching hover color for icon */
+}
+
+.sponsor-logos-section {
+  background-color: #0a0a0a;
+  padding: 1.5rem 0;
+}
+
+.sponsor-logos-section img {
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: filter 0.3s, opacity 0.3s, transform 0.3s;
+}
+.sponsorSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logos-section img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2d51f3; /* Matching your red accent */
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f43f5e;
+  opacity: 1;
+}
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .contact-info, form {
+      background: #111;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(229, 9, 20, 0.3);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      background: #0a0a0a;
+      color: #ffffff;
+      border: 1px solid #555;
+      border-radius: 5px;
+  }
+  form button:hover {
+      background: #026df8;
+      transform: scale(1.05);
+  }
+  #loader { position:fixed; inset:0; background:#000; display:flex; justify-content:center; align-items:center; z-index:99999; }
+  .spinner { border:8px solid #222; border-top:8px solid var(--accent-color); border-radius:50%; width:80px; height:80px; animation: spin 1s linear infinite; }
+  #modeToggle { position:fixed; top:20px; right:20px; background:var(--accent-color); color:#fff; padding:0.4rem 0.8rem; border:none; border-radius:5px; cursor:pointer; z-index:9999; }
+  .contact-form button { padding:0.8rem; background:var(--accent-color); color:#fff; border-radius:5px; cursor:pointer; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+      }
+    }
+</style>
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  new Swiper('.sponsorSwiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: { slidesPerView: 2, spaceBetween: 10 },
+      768: { slidesPerView: 3, spaceBetween: 20 },
+      1024: { slidesPerView: 5, spaceBetween: 30 },
+    },
+  });
+});
+
+</script>
+<body>
+<div id="loader">Loading...</div>
+<div id="progress-bar"></div>
+<!-- Start of header section
+	============================================= -->
+	<header id="bi-header" class="bi-header-section header-style-three">
+		<div class="container">
+			<div class="bi-header-content d-flex justify-content-between align-items-center" data-background="assets/img/bg/header-bg.png">
+				<div class="brand-logo">
+					<a href="index.html"><img src="assets/img/logo/Logo 11.png" alt=""></a>
+				</div>
+				<div class="bi-header-main-navigation">
+					<nav class="main-navigation clearfix ul-li">
+						<ul id="main-nav" class="nav navbar-nav clearfix">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="services.html">Service</a></li>
+							<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" href="About-us.html">About Us/Team</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="bi-header-cta-btn-grp d-flex align-items-center">
+					<div class="offcanves-btn navSidebar-button">
+						<button><i class="fal fa-bars"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="mobile_menu position-relative">
+				<div class="mobile_menu_button open_mobile_menu">
+					<i class="fal fa-bars"></i>
+				</div>
+				<div class="mobile_menu_wrap">
+					<div class="mobile_menu_overlay open_mobile_menu"></div>
+					<div class="mobile_menu_content">
+						<div class="mobile_menu_close open_mobile_menu">
+							<i class="fal fa-times"></i>
+						</div>
+						<div class="m-brand-logo">
+							<a href="index.html"><img src="assets/img/logo/Logo 11.png" alt="" style="width: 100px; height: auto;"></a>
+						</div>
+						<div class="mobile-search-bar position-relative">
+							<form action="#">
+								<input type="text" name="search" placeholder="Keywords">
+								<button><i class="fal fa-search"></i></button>
+							</form>
+						</div>
+						<nav class="mobile-main-navigation  clearfix ul-li">
+							<ul id="m-main-nav" class="nav navbar-nav clearfix">
+								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link active" href="services.html">Service</a></li>
+								<li class="nav-item"><a class="nav-link" href="#bi-portfolio-2">Portfolio</a></li>
+								<li class="nav-item"><a class="nav-link" href="About-us.html">About Us</a></li>
+								<li class="nav-item"><a class="nav-link" href="#bi-testimonial-2">Testimonial</a></li>
+							</ul>
+						</nav>
+						<div class="bi-mobile-header-social text-center">
+							<a href="#"> <i class="fab fa-instagram"></i></a>
+							<a href="#"> <i class="fab fa-linkedin-in"></i></a>
+							<a href="#"> <i class="fab fa-facebook"></i></a>
+							<a href="#"> <i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Mobile-Menu -->
+			</div>
+		</div>
+	</header>
+	<!-- Sidebar sidebar Item -->
+	<div class="xs-sidebar-group info-group">
+		<div class="xs-overlay xs-bg-black">
+			<div class="row loader-area">
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+			</div>
+		</div>
+		<div class="xs-sidebar-widget"  data-background="assets/img/bg/texture.html">
+			<div class="sidebar-widget-container">
+				<div class="widget-heading">
+					<a href="#" class="close-side-widget text-uppercase">
+						<i class="fal fa-times"></i> Close
+					</a>
+				</div>
+				<div class="sidebar-textwidget">
+					<!-- Sidebar Info Content -->
+					<div class="sidebar-info-contents headline pera-content">
+						<div class="content-inner">
+							<div class="sidebar-logo">
+								<a href="index.html"><img src="assets/img/logo/Logo 11.png" alt="" style="width: 100px; height: auto;"></a>
+							</div>
+							<div class="sidebar-menu ul-li-block">
+								<ul>
+									<li><a href="About-us.html"><i class="fal fa-home"></i> About Us </a></li>
+									<li><a href="services.html"><i class="fal fa-cogs"></i> Service </a></li>
+									<li><a href="testimonila.html"><i class="fal fa-comments-alt"></i> Testimonial </a></li>
+									<li><a href="About-us.html"><i class="fal fa-users"></i> Our Team </a></li>
+									<li><a href="portfolio.html"><i class="fal fa-briefcase"></i> Portfolio </a></li>
+									<li><a href="contact-us.html"><i class="fal fa-envelope"></i> Contact </a></li>
+								</ul>
+							</div>
+							<div class="sidebar-more-menu text-uppercase d-flex ul-li">
+								<span>More:</span>
+								<ul>
+									<li><a href="contact-us.html">contact Us </a></li>
+									<li><a href="terms.html">Terms and condition </a></li>
+									<li><a href="privacy.html">Privacy Policy </a></li>
+									<li><a href="/admin/" target="_blank">Blog Admin</a></li>
+								</ul>
+							</div>
+							<div class="sidebar-social ul-li-block">
+								<span>Social:</span>
+								<ul>
+									<li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+									<li><a href="#"><i class="fab fa-dribbble"></i> Dribble</a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+								</ul>
+							</div>
+							<div class="sidebar-copyright text-center">
+								©2025 Beacon Digital Agency. All rights reserved.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- End of header section
+	============================================= -->
+
+<section class="banner">
+ <section style="background: url('assets/img/home_5/banner/banner-bg.jpg') center/cover; padding: 250px 0 30px 0; text-align: center; color: rgb(238, 5, 5);">
+  <div class="banner-content">
+    <h1>Portfolio</h1>
+    <p>Explore our portfolio of projects.</p>
+  </div>
+</section>
+<main>
+    <section class="portfolio-section" data-aos="fade-up" data-speed="0.3">
+    <h1><div class="beacon-icon"><i class="fas fa-code"></i> <span>Website Development</span></div></h1>
+    <div class="portfolio-grid">
+      <img src="assets/img/new project/New proj 2.png" class="portfolio-item" alt="Website Development Project 1">
+      <img src="assets/img/new project/New proj 3.png" class="portfolio-item" alt="Website Development Project 2"> 
+      <img src="assets/img/new project/new proj 1.png" class="portfolio-item" alt="Website Development Project 3">
+    </div>
+  </section>
+  <section class="portfolio-section" data-aos="fade-up" data-speed="0.5">
+    <h1><div class="beacon-icon"><i class="fas fa-mobile-alt"></i> <span>App Development</span></div></h1>
+    <div class="portfolio-grid">
+      <img src="assets/img/project/pro8.png" class="portfolio-item" alt="App Development Project 1">
+      <img src="assets/img/project/pro7.png" class="portfolio-item" alt="App Development Project 2">
+      <img src="assets/img/project/pro5.png" class="portfolio-item" alt="App Development Project 3">
+    </div>
+  </section>
+  <section class="portfolio-section" data-aos="fade-up" data-speed="0.3">
+    <h1><div class="beacon-icon"><i class="fas fa-bullhorn"></i> <span>Digital Marketing</span></div></h1>
+    <div class="portfolio-grid">  
+      <img src="assets/img/new project/freepik__a-vibrant-campaign-feedback-dashboard-with-a-color__85726.png" class="portfolio-item" alt="Digital Marketing Campaign Dashboard">
+      <img src="assets/img/new project/freepik__campaign-feedback-dashboard-with-an-emphasis-on-ac__85725.png" class="portfolio-item" alt="Campaign Feedback Analytics">
+      <img src="assets/img/new project/freepik__a-clean-modern-campaign-feedback-dashboard-featuri__85727.png" class="portfolio-item" alt="Modern Marketing Dashboard">
+    </div>
+  </section>
+  <section class="portfolio-section" data-aos="fade-up" data-speed="0.3">
+    <h1><div class="beacon-icon"><i class="fas fa-pencil-ruler"></i> <span>UI/UX Design</span></div></h1>
+    <div class="portfolio-grid">
+      <img src="assets/img/new project/5741174.jpg" class="portfolio-item" alt="UI/UX Design Project 1">
+      <img src="assets/img/new project/5811308.jpg" class="portfolio-item" alt="UI/UX Design Project 2">
+      <img src="assets/img/new project/5815495.jpg" class="portfolio-item" alt="UI/UX Design Project 3">
+    </div>
+  </section>
+  
+  <section class="portfolio-section" data-aos="fade-up" data-speed="0.3">
+    <h1><div class="beacon-icon"><i class="fas fa-shopping-cart"></i> <span>ECOMMERCE</span><i class="fas fa-store"></i></div></i></h1>
+    <div class="portfolio-grid">
+      <img src="assets/img/new project/original-55699a598f33d8d388d060415a807752.webp" class="portfolio-item" alt="Ecommerce Platform Project 1">
+      <img src="assets/img/new project/original-24041a048107560759edda358d1270fc.webp" class="portfolio-item" alt="Ecommerce Platform Project 2">
+      <img src="assets/img/new project/7765738.jpg" class="portfolio-item" alt="Ecommerce Platform Project 3">
+    </div>
+  </section>
+   <section class="portfolio-section" data-aos="fade-up" data-speed="0.3">
+    <h1><div class="beacon-icon"><i class="fas fa-search"></i> <span>SEO(Serach Engine Optimization)</span></div></h1>
+    <div class="portfolio-grid">
+      <img src="assets/img/new project/images (1).jpg" class="portfolio-item" alt="SEO Optimization Project 1">
+      <img src="assets/img/new project/images.jpg" class="portfolio-item" alt="SEO Optimization Project 2">
+      <img src="assets/img/new project/project-3.png" class="portfolio-item" alt="SEO Optimization Project 3">
+    </div>
+  </section> 
+  <section class="portfolio-section" data-aos="fade-up" data-speed="0.5">
+    <h1><div class="beacon-icon"><i class="fas fa-users-cog"></i> <span>CRM (Customer Relationship Management)</span></div></h1>
+    <div class="portfolio-grid">
+      <img src="assets/img/new project/project-details-1.png" class="portfolio-item" alt="CRM System Project 1">
+      <img src="assets/img/new project/project-2.png" class="portfolio-item" alt="CRM System Project 2">
+      <img src="assets/img/new project/project-details-3.png" class="portfolio-item" alt="CRM System Project 3">
+    </div>
+  </section>
+ <section class="portfolio-section" data-aos="fade-up" data-speed="0.3">
+    <h1><div class="beacon-icon"><i class="fas fa-pen-nib"></i> <span>Branding & Graphics</span></div></h1>
+    <div class="portfolio-grid">
+      <img src="assets/img/new project/instagram_799369-556.jg" class="portfolio-item" alt="Branding Project 1">
+      <img src="assets/img/new project/5110001.jpg" class="portfolio-item" alt="Branding Project 2">
+      <img src="assets/img/new project/Screenshot 2025-06-11 101509.png" class="portfolio-item" alt="Branding Project 3">
+    </div>
+  </section>
+
+<section class="sponsor-logos-section">
+  <div class="swiper sponsorSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/img/sponsor/9.png" alt="Sponsor 1"></div>
+      <div class="swiper-slide"><img src="assets/img/sponsor/2.png" alt="Sponsor 2"></div>
+      <div class="swiper-slide"><img src="assets/img/sponsor/7.png" alt="Sponsor 3"></div>
+      <div class="swiper-slide"><img src="assets/img/sponsor/4.png" alt="Sponsor 4"></div>
+      <div class="swiper-slide"><img src="assets/img/sponsor/5.png" alt="Sponsor 5"></div>
+      <div class="swiper-slide"><img src="assets/img/sponsor/12.png" alt="Sponsor 1"></div>
+      <div class="swiper-slide"><img src="assets/img/sponsor/8.png" alt="Sponsor 1"></div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</section>
+
+  <section class="portfolio-section" data-aos="fade-up" data-speed="0.2">
+    <h1>Contact Us</h1>
+    <form action="https://beacon-digital-backend.onrender.com/api/contact" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+<!-- Start of Footer  section
+	============================================= -->
+	<footer id="bi-footer" class="bi-footer-section" data-background="assets/img/bg/footer-bg.png">
+		<div class="bi-footer-cta black-footer position-relative">
+			<div class="container">
+				<div class="bi-footer-cta-content headline d-flex align-items-center  justify-content-between flex-wrap" data-background="assets/img/bg/cta-bg.png">
+					<div class="bi-footer-cta-text"> 
+						<h3>Looking for a
+						Design Parner?</h3>
+					</div>
+					<div class="bi-cta-btn">
+						<div class="bi-btn-3 text-uppercase">
+							<a href="contact-us.html">contact us <img src="assets/img/icon/arrow.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div>
+      <div class="bi-footer-widget-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="about-widget">
+								<h3>Working Together
+								Ideas come to life</h3>
+								<p>
+									No matter how big your company is, as you expand and reach new highs you’ll want an agency to have your back. One with a process
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h3 class="widget-title">Quick link</h3>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="About-us.html">About Us/Team</a></li>
+									<li><a href="contact-us.html">Contact Us</a></li>
+									<li><a href="privacy.html">Privacy & Policy</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h3 class="widget-title">Our Services</h3>
+								<ul>
+									<li><a href="app-development.html">App Development</a></li>
+									<li><a href="branding-design.html">Branding & Design</a></li>
+									<li><a href="e-commerce.html">E-commerce</a></li>
+									<li><a href="digital-marketing.html">Digital Marketing</a></li>
+									<li><a href="ui-ux-design.html">UI/UX Design</a></li>
+									<li><a href="seo-service.html">SEO Service</a></li>
+									<li><a href="web-design.html">Web Design</a></li>
+									<li><a href="crm-automation.html">CRM & Automation</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="bi-footer-widget headline pera-content ul-li-block">
+							<div class="menu-widget">
+								<h3 class="widget-title">About Us</h3>
+								<ul>
+									<li><p>Beacon Digital helps brands grow with smart tech, beautiful design, and serious creativity.</p><ul></ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </div>
+		</div>
+		<div class="bi-footer-social">
+			<div class="container">
+				<div class="bi-footer-social-content ul-li">
+					<ul>
+						<li><a href="#"> <i class="fab fa-instagram"></i>Instagram</a>
+						<li><a href="#"> <i class="fab fa-linkedin-in"></i>LinkedIn</a>
+						<li><a href="#"> <i class="fab fa-facebook"></i>Facebook</a>
+						<li><a href="#"> <i class="fab fa-youtube"></i>YouTube</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bi-footer-logo-area">
+			<div class="container">
+				<div class="bi-footer-logo">
+					<div class="brand-logo text-center">
+						<a href="index.html"><img src="assets/img/logo/Logo 11.png" alt="" style="width: 100px; height: auto;"></a>
+					</div>
+					<div class="logo-mail text-center headline">
+						<h3><a href="#">beacondigitals6@gmail.com</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bi-footer-copyright text-center">
+			©2025 Beacon Digital Agency. All rights reserved.
+		</div>
+	</footer>
+ <!-- For Js Library -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/knob.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/ScrollToPlugin.min.js"></script>
+<script src="assets/js/ScrollSmoother.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/jquery.filterizr.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/hover-revel.js"></script>
+<script src="assets/js/split-type.min.js"></script>
+<script src="assets/js/parallax-scroll.js"></script>
+<script src="assets/js/jquery.marquee.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/tilt.jquery.min.js"></script>
+<script src="assets/js/matter.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  AOS.init();
+  window.onload = () => document.getElementById('loader').style.display = 'none';
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80 }, "shape": { "type": "star" }, "color": { "value": "#e60012" },
+      "opacity": { "value": 0.6 }, "size": { "value": 4 },
+      "line_linked": { "enable": true, "color": "#e60012", "opacity": 0.4 }, "move": { "speed": 2 }
+    },
+    "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } }
+  });
+  const titleText = "Welcome to Beacon Digital";
+  let i = 0;
+  function typeWriter() {
+    if (i < titleText.length) {
+      document.getElementById("main-title").innerHTML += titleText.charAt(i);
+      i++; setTimeout(typeWriter, 100);
+    }
+  }
+  typeWriter();
+  gsap.utils.toArray(".portfolio-section").forEach(section => {
+    gsap.to(section, {
+      backgroundPositionY: "+=200px",
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        start: "top bottom",
+        scrub: true
+      }
+    });
+  }); 
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+---
+layout: layout.njk
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
+permalink: "blog-list/index.html"
+---
+
+<h1>Blog</h1>
+<ul>
+  {% for post in collections.blog | reverse | slice(0,4) %}
+    <div>
+      <h2>{{ post.data.title }}</h2>
+      <p>{{ post.data.date | date("MMMM D, YYYY") }} by {{ post.data.author }}</p>
+      
+      {% if post.data.featured_image %}
+        <img src="{{ post.data.featured_image }}" alt="Featured image for {{ post.data.title }}">
+      {% endif %}
+
+      {% if post.data.author_image %}
+        <img src="{{ post.data.author_image }}" alt="Photo of {{ post.data.author }}">
+      {% endif %}
+
+      <div>
+        {{ post.templateContent | safe }}
+      </div>
+    </div>
+  {% endfor %}
+</ul>

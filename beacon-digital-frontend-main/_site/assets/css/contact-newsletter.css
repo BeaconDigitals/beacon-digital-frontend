@@ -1,0 +1,47 @@
+/* Contact and Newsletter Side by Side */
+#contact-newsletter {
+  padding: 4rem 0;
+  background: #000;
+  color: #fff;
+}
+
+.contact-newsletter-container {
+  display: flex;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  align-items: flex-start;
+}
+
+.contact-section, .newsletter-section {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-section h2, .newsletter-section h2 {
+  color: #e60012;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+/* Ensure containers fit properly */
+.contact-section .form-container,
+.newsletter-section .newsletter-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contact-newsletter-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .contact-section .form-container,
+  .newsletter-section .newsletter-container {
+    max-width: 100%;
+  }
+}
