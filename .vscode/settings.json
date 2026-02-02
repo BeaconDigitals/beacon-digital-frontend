@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "CodeGPT.apiKey": "OpenAI"
+=======
+    "liveServer.settings.port": 5501,
+    "livePreview.defaultPreviewPath": "/index.njk"
+>>>>>>> 1d47be384ef08259447d687f3cfbcd44ec4c29aa
 }

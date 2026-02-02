@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <!-- This is the element that needs to exist -->
+    <div id="cms-root"></div>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  </body>
+</html>
+<script>
+  // Initialize Netlify CMS
+  CMS.init({
+    config: {
+      backend: {
+        name: 'git-gateway',
+        branch: 'main', // Branch to update
+      },
+      media_folder: 'static/images', // Folder for media files
+      public_folder: '/images', // Public URL for media files
+      collections: [
+        {
+          name: 'blog',
+          label: 'Blog Posts',
+          folder: 'content/blog',
+          create: true,
+          slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+          fields: [
+            { name: 'title', label: 'Title', widget: 'string' },
+            { name: 'date', label: 'Date', widget: 'datetime' },
+            { name: 'body', label: 'Body', widget: 'markdown' },
+          ],
+        },
+      ],
+    },
+  });
+  
