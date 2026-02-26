@@ -14,7 +14,11 @@
   align-items: flex-start;
 }
 
-.contact-section, .newsletter-section {
+.contact-section{
+  flex: 1;
+  text-align: left;
+}
+.newsletter-section{
   flex: 1;
   text-align: center;
 }
